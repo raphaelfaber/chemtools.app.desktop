@@ -1,0 +1,1 @@
+<script src="/js/htmx.min.js"></script>

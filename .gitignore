@@ -1,0 +1,92 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+#####################################
+# Maven / Spring Boot
+#####################################
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+.mvn/
+mvnw
+mvnw.cmd
+
+#####################################
+# Java
+#####################################
+*.class
+*.jar
+*.war
+*.ear
+
+#####################################
+# JTE
+#####################################
+jte-classes/
+jte-temp/
+target/classes/jte/
+target/generated-sources/
+
+#####################################
+# Tailwind / Node.js
+#####################################
+node_modules/*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+dist/
+build/
+output.css
+tailwind.css
+*.css.map
+
+#####################################
+# Environment variables
+#####################################
+.env
+.env.*
+!.env.example
+
+#####################################
+# IntelliJ IDEA
+#####################################
+.idea/
+*.iml
+out/
+
+#####################################
+# Eclipse / VSCode
+#####################################
+.project
+.classpath
+.settings/
+.vscode/
+
+#####################################
+# Logs
+#####################################
+*.log
+logs/
+
+#####################################
+# OS files
+#####################################
+.DS_Store
+Thumbs.db
+
+#####################################
+# Temporary files
+#####################################
+tmp/
+temp/
