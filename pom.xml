@@ -29,7 +29,25 @@
 	<properties>
 		<java.version>25</java.version>
 		<javafx.version>25.0.2</javafx.version>
+		<javafx.platform>linux</javafx.platform> <!-- default:linux -->
 	</properties>
+	<profiles>
+
+		<profile>
+			<id>windows</id>
+			<properties>
+				<javafx.platform>win</javafx.platform>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>linux</id>
+			<properties>
+				<javafx.platform>linux</javafx.platform>
+			</properties>
+		</profile>
+
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,12 +74,14 @@
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 			<version>${javafx.version}</version>
+			<classifier>${javafx.platform}</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-web</artifactId>
 			<version>${javafx.version}</version>
+			<classifier>${javafx.platform}</classifier>
 		</dependency>
 
 	</dependencies>
@@ -72,6 +92,7 @@
 		</repository>
 	</repositories>
 	<build>
+		<finalName>chemtools-${javafx.platform}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>gg.jte</groupId>

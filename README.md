@@ -39,11 +39,16 @@ npm run tailwind
 
 ## Build
 
+Windows
 ```bash
-./mvnw clean package
+./mvnw clean package -Pwindows
+```
+Linux (default)
+```bash
+./mvnw clean package -Plinux
 ```
 
 ## Executando o programa após o build
 ```
-java -jar target/chemtools.app-<versão>.jar
+java -jar target/chemtools-<sistema>.app-<versão>.jar
 ``` 
